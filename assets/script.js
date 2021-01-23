@@ -1,6 +1,6 @@
 // Header time
-    var currentHeaderDate = moment().format('LLL');
-    $("#currentDay").text(currentHeaderDate);
+var currentHeaderDate = moment().format('LLL');
+$("#currentDay").text(currentHeaderDate);
 
 
 
@@ -36,7 +36,7 @@ $(".form-control").each(function () {
 
 //local Storage
 // saves data to be used in localStorage
- $("8").val(localStorage.getItem("8"))
+$("8").val(localStorage.getItem("8"))
 
-    
+
 

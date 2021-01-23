@@ -1,32 +1,42 @@
+// Header time
+    var currentHeaderDate = moment().format('LLL');
+    $("#currentDay").text(currentHeaderDate);
+
+
+
 //box coloring
 
-console.log(moment().format('LLL'));
 
 $(".form-control").each(function () {
     console.log($(this).attr("time"));
 
-    var time =$(this).attr("time");
+    var time = $(this).attr("time");
 
-    if(time < moment().hour()){ 
+    if (time < moment().hour()) {
         $(this).addClass("past");
-   
-        console.log("past")
-        
-}
 
-    if(time == moment().hour()){
+        console.log("past")
+
+    }
+
+    if (time == moment().hour()) {
         $(this).addClass("present");
+
         console.log("present")
     }
 
-    if(time > moment().hour()){
+    if (time > moment().hour()) {
         $(this).addClass("future");
+
         console.log("future")
     }
-
-    //Saving to localStorage
-   
-  
-
 });
+
+
+
+//local Storage
+// saves data to be used in localStorage
+ $("8").val(localStorage.getItem("8"))
+
+    
 
